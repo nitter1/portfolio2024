@@ -1,0 +1,199 @@
+.container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+  }
+}
+
+  .secMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 2em;
+  }
+
+  .secMainTwo {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 768px) {
+    .secMainTwo {
+
+    }
+    .navMain {
+
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .navTec {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  margin-top: 2em;
+  }
+
+  .navTec ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+  }
+
+  .navTec li {
+    width: 50px;
+    transition: all 0.3s ease;
+  }
+
+  .navTec li:hover {
+    transform: scale(1.1);
+  }
+
+  .navMain {
+    height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  animation: 1s ease-in-out;
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  width: 100%;
+}
+
+  .navMain ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+  }
+
+  .navMain li {
+    width: 55px;
+    transition: all 0.3s ease;
+
+  }
+
+  .navMain li:hover {
+    transform: scale(1.1);
+  }
+
+  .titleNavMain {
+    color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  animation: 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .titleNavMain:hover {
+    color: #008000;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .perfil {
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  @keyframes fadeInLeft {
+    from {
+        opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+        opacity: 0;
+      transform: translateX(20px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @media only screen and (max-width: 780px) {
+    .titleNavMain {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .navMain ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .iconsNavTwo {
+    width: 45px;
+  }
+
+  .titles {
+    font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: #e8e8e8;
+  -webkit-text-stroke: 1px #e8e8e8;
+  font-size: 2.5rem;
+  animation: 1s ease-in-out;
+  margin-top: 1.5rem;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .paragraph {
+    color: #e8e8e8;
+  width: 65%;
+  font-size: 1.1em;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  @media only screen and (max-width: 780px) {
+    .titles {
+        font-size: 32px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .paragraph {
+    font-size: 20px;
+    width: 100%;
+  }
+    }
+  

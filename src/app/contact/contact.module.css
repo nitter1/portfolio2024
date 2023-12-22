@@ -1,0 +1,105 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+      transform: translateX(-20px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+        opacity: 0;
+      transform: translateX(20px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .title {
+    color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  }
+
+  .email {
+    color: white;
+text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(299deg,#a1140a,#160440);
+  background-size: 300% 300%;
+  animation: gradient-animation 60s ease infinite;
+  width: 35%;
+  height: 7vh;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .email a {
+        color: white;
+        text-decoration: none;
+  }
+
+  .email a:hover {
+    color: #00ff00;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .email {
+        width: 100%;
+    font-size: 0.8rem;
+    }
+}
+
+.paragraph {
+    color: white;
+font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin-top: 2.5rem;;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 2.5rem;
+  white-space: pre-line;
+}
+
+@media only screen and (max-width: 480px) {
+    .paragraph {
+        width: 100%;
+    }
+
+}
+
+.container {
+    animation: fadeInRight 2s ease-in-out;
+    padding: 5em;
+}

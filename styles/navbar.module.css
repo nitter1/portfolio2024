@@ -1,0 +1,158 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    overflow: hidden;
+      z-index: 2; /* Valor maior que o z-index dos elementos abaixo */
+    display: flex;
+    height: 17vh;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out; /* Adicionando transição para a altura */
+  }
+  
+  .ulNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    
+  }
+  
+  .image {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .liHome {
+    font-weight: 600;
+    color: white;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+    
+  }
+  
+  .li {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+    padding-bottom: 0.3em;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    text-decoration: none;
+  
+  }
+  
+  .li:hover {
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    transition: 0.3s ease;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: white;
+    text-transform: uppercase;
+    
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .myLinks {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Adicionando transição para a altura */
+    max-height: 200px; /* ou qualquer valor que faça sentido para o seu design */
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+      color: white;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+      
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+    }
+
+    .li {
+        display: flex;
+        justify-content: center;
+        padding: 0.8em;
+        width: auto;
+        font-family: 'Archive', sans-serif;
+        font-weight: 300;
+        color: white;
+        transition: all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .li:active {
+        color: #666;
+      }
+
+      .topnav a.active:active {
+        color: #666;
+        text-transform: uppercase;
+        transition: all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        
+      }
+      
+      .image {
+        width: 50%;
+      }
+    
+  }
